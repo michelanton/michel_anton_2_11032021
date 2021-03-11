@@ -1,0 +1,22 @@
+
+.menu{
+position: absolute;
+    right: 0px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-around;
+
+}
+.Hébergements :hover{
+    font-family: "Raleway",'Courier New', Courier, monospace;
+    opacity: 0.8;
+}
+.Activités :hover{
+    font-family: "Raleway",'Courier New', Courier, monospace;
+    opacity: 0.8;
+}
+.sinscrire :hover{
+    font-family: "Raleway",'Courier New', Courier, monospace;
+    opacity: 0.8;
+}
