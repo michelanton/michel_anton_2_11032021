@@ -1,0 +1,55 @@
+@font-face{
+    font-family:"Raleway" ;
+    src: url( Raleway/Raleway-VariableFont_wght.ttf)
+}
+@font-face{
+   font-family:"Ralewaybolt" ;
+    src: url( Raleway/static/Raleway-Bold.ttf)
+}
+.cadrefiltre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width:50%;  
+}
+.filtre{
+    display: flex;
+    align-items: center;
+    height: 28px;
+    overflow: hidden;
+}
+.choix{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid #acadad;
+    border-radius: 40px;
+    width: auto;
+    height: 28px;
+    overflow: hidden;
+}
+.txticon{
+    margin: 0px 10px 0px 5px;
+}
+.cercle{
+    color: #a1c4f8;
+    font-size: 33px;
+}
+.icon{
+    margin-left: 10px;
+    position: absolute;
+    color: black;
+  font-size: 70%;
+}
+h2{
+    font-family:"Ralewaybolt", 'Courier New', Courier, monospace;
+    justify-items: center;
+align-items: center;
+ font-size: 14px;   
+}
+
+
+
+
+
