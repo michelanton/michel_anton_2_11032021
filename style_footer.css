@@ -1,0 +1,27 @@
+@font-face{
+    font-family:"Raleway" ;
+    src: url( Raleway/Raleway-VariableFont_wght.ttf)
+}
+@font-face{
+   font-family:"Ralewaybolt" ;
+    src: url( Raleway/static/Raleway-Bold.ttf)
+}
+a:link { 
+    text-decoration:none;
+    color: black;
+ } 
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Raleway", 'Courier New', Courier, monospace;
+    width: 100%;
+    justify-content: space-around;
+    background-color: slateblue;
+  padding: 20px 20px 20px 20px;
+    justify-items: self-start;
+}
+/*.cadre3{
+text-align: left;
+justify-items: center;
+    background-color: skyblue;
+}
