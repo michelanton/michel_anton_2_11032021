@@ -1,0 +1,138 @@
+@font-face{
+    font-family:"Raleway" ;
+    src: url( Raleway/Raleway-VariableFont_wght.ttf)
+}
+@font-face{
+   font-family:"Ralewaybolt" ;
+    src: url( Raleway/static/Raleway-Bold.ttf)
+}
+
+header{
+    width: 100%;
+background-color: yellowgreen;
+margin: 10px;
+}
+.contener1{
+    background-color: blue;
+    width: 100%;
+    height: 120px;
+}
+
+.corps{  
+ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: burlywood;
+    justify-content: space-around;
+  
+  
+}
+.box1{
+ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px 0px 10px 0px;
+    width: 65%;
+    max-height: 700px;
+    background-color: red;
+    
+ 
+}
+.box2{
+  
+  flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    width: 30%;
+    height: 500px;
+    background-color: yellow;  
+    padding-left: 50px;
+}
+.box3{
+    margin: 10px;
+    width: 100%;
+    height: 400px;
+    background-color: violet;
+
+}
+.cadre1{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  width: 200px;
+  height: 150px;
+    border-radius: 20px;
+    font-family: "Raleway", 'Courier New', Courier, monospace;
+    position: relative; 
+    overflow: hidden; 
+  }
+  .cadre1:hover{
+      cursor: pointer;
+    opacity: 0.8;
+  }
+  .cadre1 img{
+   width: 100%;
+  }
+  .txtcadre1{
+    position:absolute ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 55px;
+    width: 100%;
+    bottom: 0px;
+    font-family: "Raleway",'Courier New', Courier, monospace;
+    background-color: white;
+  padding: 0px 0px 0px 20px;
+    overflow: hidden;
+  }
+  .txt{
+    position: relative;
+    bottom: 10px;
+    font-size: small; 
+  }
+  .star{
+      font-size: 10px;
+    position: relative; 
+    bottom: 19px;
+  }
+  .txtbox{
+     width: 100%;
+}
+.cadre2{
+  
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+width: 250px;
+height: 100px;
+  border-radius: 20px;
+  font-family: "Raleway", 'Courier New', Courier, monospace;
+  position: relative; 
+  overflow: hidden; 
+ 
+}
+
+.cadre2:hover{
+  opacity: 0.8;
+}
+
+.txtcanebiere2{
+
+  position:absolute ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 120px;
+  right: 0px;
+  font-family: "Raleway",'Courier New', Courier, monospace;
+  background-color: white;
+  padding: 5px 0px 0px 5px; 
+  overflow: hidden;
+ 
+}
