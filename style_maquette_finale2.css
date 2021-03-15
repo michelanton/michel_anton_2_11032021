@@ -1,11 +1,8 @@
-@font-face{
-    font-family:"Raleway" ;
-    src: url( Raleway/Raleway-VariableFont_wght.ttf)
+@font-face {font-family:"Raleway"; src: url( Raleway/Raleway-VariableFont_wght.ttf );
 }
-@font-face{
-   font-family:"Ralewaybolt" ;
-    src: url( Raleway/static/Raleway-Bold.ttf)
+@font-face{font-family:"Ralewaybolt"; src: url( Raleway/static/Raleway-Bold.ttf);
 }
+
 body{
     max-width: 1024px;
     margin: auto;
@@ -22,7 +19,7 @@ h2{
     }
 p{
     font-size: 12px;
-    font-family: "Raleway",'Courier New', Courier, monospace; 
+
   margin: 5px 0px 0px 0px;
   }
   a:link { 
@@ -163,12 +160,12 @@ p{
             font-size: 12px;
             position: absolute;
             left: 10px;
-            top:10px
+            top:5px
             }
             .cercle_info{
             cursor: pointer;
             position: absolute;
-            top:5px;
+          
             color: #ccc6c6;
             font-size: 25px;
             overflow: visible;
@@ -285,7 +282,7 @@ p{
     justify-content: space-around;
     align-items: center;
     width: 25%;
-    height: 500px;
+ 
     padding-left: 50px;
     align-content: center;
                 }
@@ -334,7 +331,7 @@ p{
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    height: 400px;
+ 
     justify-items: center;  
                     }
                     .cadre3{  
@@ -420,6 +417,11 @@ justify-items: self-start;
         font-family: "Ralewaybolt", 'Courier New', Courier, monospace;
         font-size: 12px;
         }
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+/*--------------------@media query-----------------*/
+/*------------------------------------------------*/
+/*------------------------------------------------*/
 @media screen and (max-width: 960px){
     .box3{
  
@@ -427,6 +429,9 @@ justify-items: self-start;
     }
     .cadre3_2, .cadre3{
         width: 90%;
+    }
+    .txtbox{
+        margin-left: 20px;
     }
             
 }
@@ -444,6 +449,12 @@ justify-items: self-start;
                 height: 150px;
                 margin: 5px auto;
                 }
+                .txtbox{
+                    margin-left: 20px;
+                }
+          .txtbox1fin{
+              margin-left: 40px;
+          }      
     .footer{
       flex-direction: column;
       margin-top: 40px;
@@ -470,9 +481,9 @@ justify-items: self-start;
             margin: 10px auto;    
             }
             .txtcadre2{
-                height: 60px;
-                width: 100%;   
-               bottom: 0px;
+               width: 40%;
+               height: 100%;   
+              
                 }
                 .txtcadre2 p {
                     padding-left: 10px;
@@ -505,6 +516,7 @@ justify-items: self-start;
         bottom: 20%; 
     width: 100%;  
     }
+   
     .zone_choix{
      
        min-width: 300px;
