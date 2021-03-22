@@ -1,17 +1,18 @@
 @font-face {
   font-family: "Raleway";
-  src: url(Raleway/Raleway-VariableFont_wght.ttf);
+  src: url(./Raleway/Raleway-VariableFont_wght.ttf);
 }
 
 @font-face {
   font-family: "Ralewaybolt";
-  src: url(Raleway/static/Raleway-Bold.ttf);
+  src: url(./Raleway/static/Raleway-Bold.ttf);
 }
 
 body {
   position: relative;
   max-width: 1024px;
-  margin: auto;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1 {
@@ -68,8 +69,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   line-height: 50px;
   text-align: center;
 }
@@ -131,15 +133,17 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  overflow: hidden;
   border-radius: 13.33333px;
   border: 2px solid #f2f2f2;
+  overflow: visible;
 }
 
 .recherche {
   cursor: pointer;
-  border: 2px solid #0065fc;
+  height: 37px;
   background-color: #0065fc;
+  border-top-right-radius: 12.5px;
+  border-bottom-right-radius: 12.5px;
 }
 
 .txt_recherche {
@@ -170,9 +174,11 @@ form input {
 .zonerecherche {
   background-color: #f2f2f2;
   width: 13%;
-  height: 100%;
+  height: 35px;
   text-align: center;
-  line-height: 30px;
+  line-height: 35px;
+  border-bottom-left-radius: 12.5px;
+  border-top-left-radius: 12.5px;
 }
 
 .boxsaisie {
@@ -180,6 +186,7 @@ form input {
 }
 
 .cadrefiltre {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,7 +202,6 @@ form input {
 .filtre {
   margin-left: 10px;
   height: 25px;
-  overflow: hidden;
 }
 
 .choix {
@@ -213,14 +219,12 @@ form input {
   border: 2px solid #ccc6c6;
   border-radius: 40px;
   width: auto;
-  height: 27px;
-  overflow: hidden;
+  height: 30px;
   max-width: 160px;
   margin-left: 12px;
 }
 
 .zone_choix {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,6 +239,7 @@ form input {
 .zone_icon {
   position: absolute;
   left: 11px;
+  bottom: 35px;
 }
 
 .bouton {
@@ -252,13 +257,13 @@ form input {
 .cercle {
   position: absolute;
   color: #a1c4f8;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .icon {
   position: absolute;
-  margin-left: 8px;
-  top: 8px;
+  margin-left: 10px;
+  top: 10px;
   color: #0065fc;
   font-size: 12px;
 }
@@ -495,18 +500,6 @@ form input {
   color: #f2f2f2;
 }
 
-/*   
-    .box2{
-        position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: $fond_gris;
-    border-radius: $radius;
-    justify-content: space-around;
-    width: 25%;
-    padding: 20px;
-                }*/
 .box2 {
   position: relative;
   display: -webkit-box;
@@ -532,21 +525,6 @@ form input {
       align-content: center;
 }
 
-/*
-                .cadre2{
-                    position: relative;
-                    display: flex;
-                    flex-direction: row;
-                    cursor: pointer;
-                    width: 250px;
-                    height: 100px;
-                    border-radius:$radius;
-                    margin: 10px 20px 10px 0px;
-                    overflow: hidden;
-                    box-shadow:$shadow_box;
-                    border:3px solid white;
-                    align-items: center;
-                    }*/
 .cadre2 {
   position: relative;
   display: -webkit-box;
@@ -733,7 +711,7 @@ form input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   justify-items: self-start;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .txtfooter {
@@ -775,120 +753,12 @@ form input {
 }
 
 @media screen and (max-width: 740px) {
-  .box3 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: auto;
-  }
-  .cadrebox3_1, .cadrebox3_2 {
-    height: auto;
-    width: 100%;
-  }
-  .cadre3_2, .cadre3 {
-    width: 300px;
-    height: 150px;
-    margin: 10px auto;
-  }
-  .txtbox {
-    margin-left: 20px;
-  }
-  .txtbox1fin {
-    margin-left: 40px;
-  }
-  .footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 40px;
-  }
-  .txtfooter {
-    width: 100%;
-  }
-  .box1 {
-    background-color: white;
-  }
-  .box2 {
-    background-color: #f2f2f2;
-    width: 100%;
-    height: auto;
-    padding: auto;
-    border-radius: 0px;
-  }
-  .box3 {
-    border-radius: 0px;
-  }
-  .cadre2 {
-    width: 300px;
-    height: 150px;
-    border-radius: 20px;
-    margin: 10px auto;
-  }
-  .txtcadre2 {
-    width: 40%;
-    height: 100%;
-  }
-  .txtcadre2 p {
-    padding-left: 10px;
-  }
-  .txtcadre2 .star {
-    padding-left: 10px;
-  }
-  .cadre1 {
-    margin: auto;
-    width: 300px;
-    height: 150px;
-    margin: 10px auto;
-  }
-  .box1 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    height: auto;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .txtcadre1 {
-    height: 60px;
-    padding: auto;
-  }
-  .cd1_img1 img {
-    position: absolute;
-    bottom: 20%;
-    width: 100%;
-  }
-  .zone {
-    width: 90%;
-    overflow: visible;
-  }
-  .zone_choix {
-    min-width: 300px;
-  }
-  .bouton {
-    margin: 5px 0px;
-  }
-  .choix {
-    margin-left: 5px;
-  }
-  .zone_icon {
-    left: 5px;
-  }
-  .filtre {
-    margin-left: 5px;
-  }
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     width: 100%;
     height: 30px;
     margin-top: 10px;
@@ -918,8 +788,102 @@ form input {
     left: 0%;
     line-height: 30px;
   }
+  .zone {
+    width: 80%;
+    overflow: visible;
+  }
+  .zone_choix {
+    min-width: 300px;
+  }
+  .bouton {
+    margin: 5px 0px;
+  }
+  .choix {
+    margin-left: 5px;
+  }
+  .zone_icon {
+    left: 5px;
+  }
+  .filtre {
+    margin-left: 5px;
+  }
   .trouver {
     padding: 20px 0px 10px 0px;
+  }
+  .box1 {
+    background-color: white;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cadre1 {
+    margin: auto;
+    width: 300px;
+    height: 150px;
+    margin: 10px auto;
+  }
+  .txtcadre1 {
+    height: 60px;
+    padding: auto;
+  }
+  .cd1_img1 img {
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+  }
+  .txtbox1fin {
+    margin-left: 40px;
+  }
+  .box2 {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: auto;
+    padding: auto;
+    border-radius: 0px;
+  }
+  .cadre2 {
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    margin: 10px auto;
+  }
+  .txtcadre2 {
+    width: 40%;
+    height: 100%;
+  }
+  .txtcadre2 p {
+    padding-left: 10px;
+  }
+  .txtcadre2 .star {
+    padding-left: 10px;
+  }
+  .box3 {
+    border-radius: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .box3 .cadrebox3_1, .box3 .cadrebox3_2 {
+    height: auto;
+    width: 100%;
+  }
+  .box3 .cadre3_2, .box3 .cadre3 {
+    width: 300px;
+    height: 150px;
+    margin: 10px auto;
+  }
+  .box3 .txtbox {
+    margin-left: 20px;
   }
   .order1 {
     -webkit-box-ordinal-group: 3;
@@ -937,8 +901,9 @@ form input {
             order: 3;
   }
   .recherche {
+    height: 100%;
     border: 2px solid #0065fc;
-    border-radius: 13.33333px;
+    border-radius: 14.28571px;
   }
   .txt_recherche {
     display: none;
@@ -994,6 +959,12 @@ form input {
   }
   .cd2_img3 img {
     width: 65%;
+  }
+  .footer {
+    margin-top: 5px;
+  }
+  .txtfooter {
+    width: 300px;
   }
 }
 /*# sourceMappingURL=style_reservia.css.map */
