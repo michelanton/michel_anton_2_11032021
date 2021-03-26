@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Raleway";
-  src: url(../Raleway/Raleway-VariableFont_wght.ttf);
+  src: url(./Raleway/Raleway-VariableFont_wght.ttf);
 }
 
 @font-face {
   font-family: "Ralewaybolt";
-  src: url(../Raleway/static/Raleway-Bold.ttf);
+  src: url(./Raleway/static/Raleway-Bold.ttf);
 }
 
 body {
@@ -13,6 +13,11 @@ body {
   max-width: 1024px;
   margin: auto;
   padding: 0px;
+}
+
+body a {
+  text-decoration: none;
+  color: black;
 }
 
 h1 {
@@ -33,10 +38,6 @@ p {
   font-size: 12px;
   font-family: "Raleway", 'Courier New', Courier, monospace;
   margin: 5px 0px 0px 0px;
-}
-
-a:link {
-  text-decoration: none;
 }
 
 header {
@@ -82,9 +83,12 @@ header {
 }
 
 .heb {
-  font-family: "Ralewaybolt", 'Courier New', Courier, monospace;
   border-top: 2px solid #0065fc;
   width: 100%;
+}
+
+.heb a {
+  color: #0065fc;
 }
 
 .act {
@@ -92,9 +96,17 @@ header {
   width: 100%;
 }
 
+.act a {
+  color: black;
+}
+
 .ins {
   margin-top: 2px;
   width: 100%;
+}
+
+.ins a {
+  color: #0065fc;
 }
 
 .link1 :hover {
@@ -1000,4 +1012,4 @@ form input {
     width: 300px;
   }
 }
-/*# sourceMappingURL=brouillon_reservia.css.map */
+/*# sourceMappingURL=style_reservia.css.map */
