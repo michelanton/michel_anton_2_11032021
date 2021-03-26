@@ -11,7 +11,7 @@
 body {
   position: relative;
   max-width: 1024px;
-  margin: 0px;
+  margin: auto;
   padding: 0px;
 }
 
@@ -262,8 +262,8 @@ form input {
 
 .icon {
   position: absolute;
-  margin-left: 10px;
-  top: 10px;
+  margin-left: 11px;
+  top: 11px;
   color: #0065fc;
   font-size: 12px;
 }
@@ -750,9 +750,44 @@ form input {
   .txtbox {
     margin-left: 20px;
   }
+  .txt1 {
+    margin: 10px 0px 0px 38px;
+  }
+  .txt2 {
+    margin: 0px 0px 0px 0px;
+  }
+  .txt2 i {
+    position: absolute;
+    right: 10%;
+    top: 10px;
+  }
+  .txt3 {
+    margin: 0px 0px 10px 5px;
+  }
+  .txtbox1fin {
+    margin: 10px 0px 0px 37px;
+  }
+  .cd2_img1 img {
+    position: absolute;
+    top: 5px;
+    right: 100px;
+    height: 100%;
+  }
+  .cd2_img2 img {
+    position: absolute;
+    top: 5px;
+    right: 100px;
+    height: 100%;
+  }
+  .cd2_img3 img {
+    width: 65%;
+  }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 440px) {
+  body {
+    max-width: 375px;
+  }
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -789,7 +824,7 @@ form input {
     line-height: 30px;
   }
   .zone {
-    max-width: 300px;
+    width: 80%;
     overflow: visible;
   }
   .zone_choix {
@@ -823,9 +858,9 @@ form input {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 0px;
   }
   .cadre1 {
-    margin: auto;
     width: 300px;
     height: 150px;
     margin: 10px auto;
@@ -846,7 +881,7 @@ form input {
     background-color: #f2f2f2;
     width: 100%;
     height: auto;
-    padding: auto;
+    padding: 0px;
     border-radius: 0px;
   }
   .cadre2 {
@@ -872,6 +907,7 @@ form input {
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
+    padding: 0px;
   }
   .box3 .cadrebox3_1, .box3 .cadrebox3_2 {
     height: auto;
@@ -881,9 +917,6 @@ form input {
     width: 300px;
     height: 150px;
     margin: 10px auto;
-  }
-  .box3 .txtbox {
-    margin-left: 20px;
   }
   .order1 {
     -webkit-box-ordinal-group: 3;
@@ -915,7 +948,7 @@ form input {
     margin: 10px 0px 0px 22%;
   }
   .txt2 {
-    margin: 0px 0px 0px 20%;
+    margin: 0px 0px 0px 22%;
   }
   .txt2 i {
     position: absolute;
@@ -923,7 +956,7 @@ form input {
     top: 10px;
   }
   .txt3 {
-    margin: 0px 0px 10px 10%;
+    margin: 0px 0px 10px 40px;
   }
   .txtbox1fin {
     margin: 10px 0px 0px 25%;
@@ -967,4 +1000,4 @@ form input {
     width: 300px;
   }
 }
-/*# sourceMappingURL=style_reservia.css.map */
+/*# sourceMappingURL=brouillon_reservia.css.map */
