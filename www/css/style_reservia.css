@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Raleway";
-  src: url(./Raleway/Raleway-VariableFont_wght.ttf);
+  src: url(../Raleway/Raleway-VariableFont_wght.ttf);
 }
 
 @font-face {
   font-family: "Ralewaybolt";
-  src: url(./Raleway/static/Raleway-Bold.ttf);
+  src: url(../Raleway/static/Raleway-Bold.ttf);
 }
 
 body {
@@ -103,9 +103,6 @@ header {
 .ins {
   margin-top: 2px;
   width: 100%;
-}
-
-.ins a {
   color: #0065fc;
 }
 
